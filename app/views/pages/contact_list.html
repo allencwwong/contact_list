@@ -1,0 +1,38 @@
+contact_list.html
+<h1>Contact</h1>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+  </tr>
+<% @contact.each do |contact| %>
+
+  <tr>
+    <td><%= contact.first_name %></td>
+    <td><%= contact.last_name %></td>
+    <td><%= contact.email %></td>
+    <td><%= contact.phone_number %></td>
+  </tr>  
+
+<%end%>
+</table>
+
+<div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropup
+    <span class="caret"></span>
+  </button>
+
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+  <<li class="dropdown-header">Dropdown header</li>
+  <li role="separator" class="divider">Testing</li>
+  
+</ul>
+
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
