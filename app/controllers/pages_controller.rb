@@ -18,4 +18,3 @@ class PagesController < ApplicationController
 
 end
 
-#

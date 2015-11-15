@@ -8,9 +8,9 @@ class Contact < ActiveRecord::Base
     return "#{first_name} #{last_name}"
   end
 
-  def area_code
+  def japan_phone_number
     if phone_number != nil
-    return "81-"
+    return "81-#{phone_number}"
     end
   end
 
