@@ -1,5 +1,5 @@
 <h1>Contact</h1>
-<table>
+<table class="table">
   <tr>
     <th>Full Name</th>
     <th>Email</th>
@@ -12,7 +12,7 @@
 
     <td><%= contact.full_name %></td>
     <td><%= contact.email %></td>
-    <td><%= contact.phone_number %></td>
+    <td><%= "#{contact.area_code}#{contact.phone_number}" %></td>
     <td><%= contact.friendly_created_at %></td>    
   </tr>  
 

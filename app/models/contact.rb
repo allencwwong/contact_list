@@ -8,4 +8,10 @@ class Contact < ActiveRecord::Base
     return "#{first_name} #{last_name}"
   end
 
+  def area_code
+    if phone_number != nil
+    return "81-"
+    end
+  end
+
 end
