@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-   get 'home', to: 'pages#contact_list' 
+   get '/home', to: 'pages#index'
+   post '/home', to: 'pages#contact_list' 
+   get '/add', to: 'pages#new'
+
+  # get '/contact_update' to: 'pages#contact_list'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

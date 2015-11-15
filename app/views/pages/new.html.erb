@@ -1,0 +1,24 @@
+add_new_contact.html.erb
+<h1>Add new Contact </h1>
+<%= form_tag '/home', method: :post do %>
+  <div>
+    <%= label_tag :add_contact_fname , "Enter Contact Name" %>
+    <%= text_field_tag :add_contact_fname %>
+  </div>
+    <div>
+    <%= label_tag :add_contact_lname , "Enter Contact Last Name" %>
+    <%= text_field_tag :add_contact_lname %>
+  </div>
+     <div>
+    <%= label_tag :add_contact_email , "Enter Contact email" %>
+    <%= text_field_tag :add_contact_email %>
+  </div>
+     <div>
+    <%= label_tag :add_contact_phone , "Enter Contact phone" %>
+    <%= text_field_tag :add_contact_phone %>
+  </div>
+  <div>
+    <%= submit_tag "submit contact" %>
+  </div>
+
+  <% end %>
