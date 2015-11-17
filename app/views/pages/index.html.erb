@@ -2,8 +2,10 @@
 <table class="table">
   <tr>
     <th>Full Name</th>
+    <th>Middle Name</th>
     <th>Email</th>
     <th>Phone Number</th>
+    <th>Bio</th>
     <th>Created at</th>
   </tr>
 <% @contact.each do |contact| %>
@@ -11,8 +13,10 @@
   <tr>
 
     <td><%= contact.full_name %></td>
+    <td><%= contact.middle_name %></td>    
     <td><%= contact.email %></td>
     <td><%= "#{contact.japan_phone_number}" %></td>
+    <td><%= contact.bio %></td>
     <td><%= contact.friendly_created_at %></td>    
   </tr>  
 
